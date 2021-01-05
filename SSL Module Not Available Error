@@ -1,0 +1,14 @@
+StackOverFlow_issue
+https://stackoverflow.com/questions/54135206/requests-caused-by-sslerrorcant-connect-to-https-url-because-the-ssl-module
+
+# requests.exceptions.SSLError: HTTPSConnectionPool(host=URL , 
+# port=443): Max retries exceeded with url: / (Caused by SSLError("Can't 
+# connect to HTTPS URL because the SSL module is not available."))
+
+
+Don't know if this has been solved yet but I was getting similar problems with Anaconda python 3.7.3 and Idle on Windows 10. Fixed it by adding:
+
+<path>\Anaconda3
+<path>\Anaconda3\scripts
+<path>\Anaconda3\Library\bin
+to the PATH variable.
